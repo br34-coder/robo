@@ -2,16 +2,15 @@
 import wiringpi2 as gpio
 import time
 
+#init the GPIO
 #prepare PWM pins
 gpio.wiringPiSetupGpio()
 gpio.pinMode(12, gpio.GPIO.PWM_OUTPUT)
 gpio.pinMode(13, gpio.GPIO.PWM_OUTPUT)
-
 #prepare PWM channels
 gpio.pwmSetMode(gpio.GPIO.PWM_MODE_MS)
 gpio.pwmSetRange(480)
 gpio.pwmSetClock(2)
-
 #prepare direction pins
 gpio.pinMode(5, gpio.GPIO.OUTPUT)
 gpio.pinMode(6, gpio.GPIO.OUTPUT)
