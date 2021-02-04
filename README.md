@@ -6,3 +6,4 @@ sudo apt-get install python-dev python-pi
 
 sudo pip install wiringpi2
 
+
